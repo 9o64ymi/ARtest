@@ -6,7 +6,11 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: https://9o64ymi.github.io/ARtest/assets/targets.mind; filterMinCF: 0.0001; filterBeta: 100;">
+    <a-scene mindar-image="imageTargetSrc: https://9o64ymi.github.io/ARtest/assets/targets.mind;" 
+          color-space="sRGB" 
+          renderer="colorManagement: true, physicallyCorrectLights" 
+          vr-mode-ui="enabled: false" 
+          device-orientation-permission-ui="enabled: false">
       <a-assets>
         <img id="model1" src="https://9o64ymi.github.io/ARtest/assets/1.jpg" />
         <img id="model2" src="https://9o64ymi.github.io/ARtest/assets/2.jpg" />
